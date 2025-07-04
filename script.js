@@ -351,3 +351,15 @@ window.addEventListener("click", function (event) {
     document.body.style.overflow = "auto";
   }
 });
+
+// Sticky header logic
+window.addEventListener("scroll", function () {
+  const sticky = document.getElementById("sticky-header");
+  const heroHeight = document.getElementById("hero").offsetHeight;
+
+  if (window.scrollY > heroHeight - 80) {
+    sticky.classList.add("show");
+  } else {
+    sticky.classList.remove("show");
+  }
+});
