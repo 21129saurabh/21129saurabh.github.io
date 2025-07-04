@@ -846,9 +846,10 @@ body.dark-mode .contact-form textarea:focus {
   cursor: pointer;
   border: none;
   z-index: 1000;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   outline: none;
 }
@@ -867,8 +868,8 @@ body.dark-mode .contact-form textarea:focus {
 /* Theme Toggle */
 .theme-toggle {
   position: fixed;
-  top: 15px;
-  right: 15px;
+  top: 60px; /* Moved below sticky header on phones */
+  right: 10px;
   z-index: 10000;
   display: inline-flex;
   align-items: center;
@@ -876,9 +877,9 @@ body.dark-mode .contact-form textarea:focus {
   background-color: #eee;
   color: #333;
   font-weight: 600;
-  font-size: clamp(0.75rem, 1.5vw, 0.85rem);
-  padding: 6px 10px;
-  border-radius: 20px;
+  font-size: clamp(0.7rem, 1.3vw, 0.8rem);
+  padding: 5px 8px;
+  border-radius: 16px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, transform 0.2s ease, box-shadow 0.3s ease;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -907,7 +908,7 @@ body.dark-mode .theme-toggle:active {
 }
 
 .theme-toggle .toggle-icon {
-  font-size: 16px;
+  font-size: 14px;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -1151,23 +1152,24 @@ body.dark-mode .sticky-header {
 .sticky-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 20px;
-  padding: 0 15px;
-  height: 50px;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 10px;
+  height: 48px;
   max-width: 1200px;
   margin: auto;
   line-height: 1;
 }
 
 .sticky-name {
-  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
   font-weight: 600;
   font-family: var(--font-family-heading);
   color: var(--primary-color);
   margin: 0;
   padding: 0;
   line-height: 1;
+  flex-shrink: 0;
 }
 
 body.dark-mode .sticky-name {
@@ -1176,16 +1178,19 @@ body.dark-mode .sticky-name {
 
 .inline-nav {
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
+  gap: 8px;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .inline-nav a {
-  font-size: clamp(0.9rem, 1.5vw, 1rem);
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
   font-weight: 600;
   text-decoration: none;
   color: var(--text-color-light);
   margin: 0;
-  padding: 0;
+  padding: 4px 0;
   line-height: 1;
   display: inline-block;
 }
@@ -1347,27 +1352,55 @@ body.dark-mode .inline-nav a.active {
     font-size: clamp(0.7rem, 1.3vw, 0.8rem);
   }
   .theme-toggle {
-    top: 10px;
+    top: 55px; /* Adjusted to stay below sticky header */
     right: 10px;
-    padding: 5px 8px;
-    font-size: clamp(0.7rem, 1.3vw, 0.8rem);
+    padding: 4px 6px;
+    font-size: clamp(0.65rem, 1.2vw, 0.75rem);
   }
   .theme-toggle .toggle-icon {
-    font-size: 14px;
+    font-size: 12px;
   }
   .sticky-container {
-    height: 45px;
-    gap: 15px;
-    padding: 0 10px;
+    height: 40px;
+    gap: 8px;
+    padding: 0 8px;
   }
   .sticky-name {
-    font-size: clamp(1rem, 1.8vw, 1.2rem);
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
   }
   .inline-nav {
-    gap: 10px;
+    gap: 6px;
   }
   .inline-nav a {
-    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+    font-size: clamp(0.7rem, 1.3vw, 0.8rem);
+    padding: 3px 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .sticky-container {
+    height: 36px;
+    gap: 6px;
+    padding: 0 6px;
+  }
+  .sticky-name {
+    font-size: clamp(0.8rem, 1.3vw, 0.9rem);
+  }
+  .inline-nav {
+    gap: 5px;
+  }
+  .inline-nav a {
+    font-size: clamp(0.65rem, 1.2vw, 0.75rem);
+    padding: 2px 0;
+  }
+  .theme-toggle {
+    top: 50px;
+    right: 8px;
+    padding: 3px 5px;
+    font-size: clamp(0.6rem, 1.1vw, 0.7rem);
+  }
+  .theme-toggle .toggle-icon {
+    font-size: 10px;
   }
 }
 
