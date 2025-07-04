@@ -132,41 +132,33 @@ tsParticles.load("tsparticles", {
 const contactForm = document.getElementById("contact-form");
 if (contactForm) {
   contactForm.addEventListener("submit", async function (e) {
-    // Use async/await for better readability
     e.preventDefault();
     const formData = new FormData(this);
     const formResponse = document.getElementById("form-response");
-    formResponse.textContent = "Sending message..."; // Provide immediate feedback
-    formResponse.style.color = "grey"; // Set initial color
+    formResponse.textContent = "Sending message...";
+    formResponse.style.color = "grey";
 
     try {
-      const response = await fetch(
-        "https://formsubmit.co/ajax/21129saurabh@gmail.com",
-        {
-          method: "POST",
-          headers: { Accept: "application/json" },
-          body: formData,
-        }
-      );
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { Accept: "application/json" },
+        body: formData,
+      });
 
-      if (response.ok) {
+      const data = await response.json();
+      if (data.success) {
         formResponse.textContent = "✅ Message sent successfully!";
         formResponse.style.color = "limegreen";
-        contactForm.reset(); // Reset form on success
+        contactForm.reset();
       } else {
-        const data = await response.json(); // Get error message from FormSubmit if available
-        formResponse.textContent = `❌ Something went wrong. ${
-          data.message || "Please try again."
-        }`;
+        formResponse.textContent = `❌ Something went wrong. ${data.message || "Please try again."}`;
         formResponse.style.color = "crimson";
       }
     } catch (error) {
       console.error("Form submission error:", error);
-      formResponse.textContent =
-        "⚠️ Network error. Check your internet connection.";
+      formResponse.textContent = "⚠️ Network error. Check your internet connection.";
       formResponse.style.color = "orange";
     } finally {
-      // Clear message after a few seconds
       setTimeout(() => {
         formResponse.textContent = "";
       }, 5000);
