@@ -226,28 +226,28 @@
           <ul>
             <li><i class="fas fa-envelope"></i><a href="mailto:21129saurabh@gmail.com">21129saurabh@gmail.com</a></li>
             <li><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/saurabhpawal" target="_blank">linkedin/saurabhpawal</a></li>
-            <li><i class="fab fa-github"></i><a href="https://github.com/21129saurabh" target="_blank">github.com/21129saurabh</a></li>
+            <li><i class="fab fa-github"></i><a href="https://github.com/21129saurabh" target="_blank">github.com/saurabhpawal23</a></li>
             <li><i class="fas fa-file-download"></i><a href="resume.pdf" download>Download Resume</a></li>
           </ul>
         </div>
-        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
-  <input type="hidden" name="access_key" value="800da544-65e2-47ab-9b41-2c539905c8c1">
-  <input type="text" name="name" required>
-  <input type="email" name="email" required>
-  <textarea name="message" required></textarea>
-  <button type="submit">Submit Form</button>
-</form>
-<div id="form-response"></div>
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+            <div id="form-response"></div>
           </form>
         </div>
       </div>
     </div>
   </section>
 
- <!-- Replace the existing .fab-resume button -->
-<a href="resume.pdf" download class="fab-resume">
-  <i class="fas fa-file-download"></i> download resume
-</a>
+  <a href="resume.pdf" download class="fab-resume">
+    <i class="fas fa-file-download"></i> download resume
+  </a>
 
   <footer>
     <p>© 2025 Saurabh Pawal. All rights reserved.</p>
@@ -255,7 +255,7 @@
 
   <div id="projectModal" class="modal">
     <div class="modal-content">
-      <span class="close-button">&times;</span>
+      <span class="close-button">×</span>
       <h3 id="modalProjectTitle"></h3>
       <img id="modalProjectImage" src="" alt="" />
       <p id="modalProjectSummary"></p>
