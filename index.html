@@ -230,14 +230,14 @@
             <li><i class="fas fa-file-download"></i><a href="resume.pdf" download>Download Resume</a></li>
           </ul>
         </div>
-        <div class="contact-form">
-          <h3>Send a Message</h3>
-          <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-            <div id="form-response"></div>
+        <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="800da544-65e2-47ab-9b41-2c539905c8c1">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit Form</button>
+</form>
+<div id="form-response"></div>
           </form>
         </div>
       </div>
