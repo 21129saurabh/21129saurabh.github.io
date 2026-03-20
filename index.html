@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saurabh Pawal - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <button class="theme-toggle">
+    <span class="toggle-text">Light Mode</span>
+    <i class="fas fa-moon toggle-icon"></i>
+  </button>
+
+  <div id="progress-bar"></div>
+
+  <header id="hero">
+    <div class="container">
+      <h1>SAURABH PAWAL</h1>
+      <p class="tagline">
+        <span id="typed"></span>
+      </p>
+      <p>Software Developer | Fullstack Lead | AI Integration Expert</p>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/saurabhpawal" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/21129saurabh" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:21129saurabh@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <nav class="d-flex">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="sticky-header" class="sticky-header">
+    <div class="sticky-container">
+      <h2 class="sticky-name">SAURABH PAWAL</h2>
+      <nav class="inline-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="container about-content">
+      <div class="about-wrapper">
+        <div class="left-column">
+          <div class="about-image">
+            <img src="profile.jpg" alt="Saurabh Pawal" class="tilt" />
+          </div>
+          <div class="education-section">
+            <h2>Education</h2>
+            <div class="education-item">
+              <h3>B.Tech in Computer Science Engineering</h3>
+              <p>National Institute of Technology, Warangal<br />2022 – 2026</p>
+            </div>
+            <div class="education-item">
+              <h3>12th, CBSE</h3>
+              <p>Pratibha International School and Junior College, Maharashtra<br />2020 – 2022</p>
+            </div>
+            <div class="education-item">
+              <h3>10th, CBSE</h3>
+              <p>SNBP International School, Pune<br />2007 – 2020</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <div class="floating-icons">
+            <i class="fas fa-code"></i>
+            <i class="fas fa-brain"></i>
+            <i class="fas fa-rocket"></i>
+          </div>
+          <p>
+            Hi, I’m <span class="highlight-text">Saurabh Pawal</span> — a passionate <span class="highlight-text">fullstack developer</span> and <span class="highlight-text">AI integration specialist</span>. I love turning complex ideas into <span class="highlight-text">clean, scalable software</span>. With over <span class="highlight-text">3 years</span> of hands-on experience, I’ve built robust systems using <span class="highlight-text">Python, Django, React</span>, and AI-powered tools that help businesses grow.
+          </p>
+          <p>
+            My journey spans everything from backend APIs and frontend UI/UX to <span class="highlight-text">cutting-edge AI solutions</span> using LLMs and Transformers. Whether leading development teams or experimenting with new technologies, I thrive at the intersection of <span class="highlight-text">innovation</span> and <span class="highlight-text">execution</span>.
+          </p>
+          <ul class="about-list">
+            <li><i class="fas fa-star"></i><span class="highlight-text">Lead Developer:</span> Delivered fullstack systems from scratch with scalable architecture.</li>
+            <li><i class="fas fa-brain"></i><span class="highlight-text">AI Innovator:</span> Integrated intelligent pipelines using LLMs and Transformer models.</li>
+            <li><i class="fas fa-tools"></i><span class="highlight-text">Tech Stack:</span> Python, Django, React, Node.js, PostgreSQL, C++.</li>
+            <li><i class="fas fa-users"></i><span class="highlight-text">Team Leadership:</span> Mentored developers and improved engineering workflows.</li>
+            <li><i class="fas fa-lightbulb"></i><span class="highlight-text">Always Evolving:</span> Continuously exploring new technologies and open-source tools.</li>
+          </ul>
+          <h3>Technical Skills & Interests</h3>
+          <div class="skills-grid">
+            <span class="skill-box"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-box"><i class="fab fa-react"></i> React & Node.js</span>
+            <span class="skill-box"><i class="fas fa-brain"></i> AI/ML & LLMs</span>
+            <span class="skill-box"><i class="fas fa-database"></i> PostgreSQL / MySQL</span>
+            <span class="skill-box"><i class="fas fa-code"></i> C++</span>
+            <span class="skill-box"><i class="fab fa-python"></i> Django</span>
+            <span class="skill-box"><i class="fab fa-java"></i> Java</span>
+            <span class="skill-box"><i class="fab fa-html5"></i> HTML & CSS</span>
+            <span class="skill-box"><i class="fas fa-cogs"></i> Data Structures & Algorithms</span>
+            <span class="skill-box"><i class="fas fa-laptop-code"></i> Fullstack Development</span>
+            <span class="skill-box"><i class="fas fa-code-branch"></i> VS Code, Git/GitHub</span>
+            <span class="skill-box"><i class="fas fa-lock"></i> Cryptography</span>
+          </div>
+          <h3>Soft Skills & Interests</h3>
+          <div class="extended-skills">
+            <span class="skill-box">Leadership</span>
+            <span class="skill-box">Team Management</span>
+            <span class="skill-box">Communication</span>
+            <span class="skill-box">Time Management</span>
+            <span class="skill-box">Adaptability</span>
+            <span class="skill-box">Composure</span>
+            <span class="skill-box">Patience</span>
+            <span class="skill-box">Software Development</span>
+            <span class="skill-box">Business Management</span>
+          </div>
+          <div class="stats">
+            <div><strong>3+</strong> Years Experience</div>
+            <div><strong>8+</strong> Projects Delivered</div>
+            <div><strong>5+</strong> AI Tools Integrated</div>
+          </div>
+          <p>
+            Outside of work, I enjoy contributing to open-source, sketching new product ideas, and keeping up with emerging AI research.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="container">
+      <div class="experience-header-section">
+        <h2>Professional Experience</h2>
+        <p>Key roles and contributions that shaped my expertise in software development and AI integration.</p>
+      </div>
+      <div class="experience-timeline">
+        <div class="experience-item">
+          <div class="experience-header">
+            <img src="imr.jpeg" alt="IMR Tech Solutions Logo" class="company-logo" />
+            <div>
+              <h3>Web Development Intern</h3>
+              <p class="company">
+                <a href="https://imrtechsolutions.com" target="_blank">IMR Tech Solutions</a> • Pune • May – July 2025
+              </p>
+            </div>
+          </div>
+          <div class="tech-badges">
+            <span>Django</span>
+            <span>LangChain</span>
+            <span>LLaMA 2</span>
+            <span>BeautifulSoup</span>
+            <span>pgvector</span>
+          </div>
+          <ul>
+            <li>Developed an AI research assistant with topic-based Q&A using LLMs and RAG pipelines.</li>
+            <li>Integrated file uploads, scraped articles (newspaper3k), and used vector search via pgvector.</li>
+            <li>Built a smooth Bootstrap frontend for real-time query interaction.</li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <div class="experience-header">
+            <img src="bluestock.jpeg" alt="BLUESTOCK.in Logo" class="company-logo" />
+            <div>
+              <h3>Software Development Intern</h3>
+              <p class="company">
+                <a href="https://bluestock.in" target="_blank">BLUESTOCK.in</a> • Remote • May – July 2025
+              </p>
+            </div>
+          </div>
+          <div class="tech-badges">
+            <span>Django</span>
+            <span>DRF</span>
+            <span>PostgreSQL</span>
+            <span>Bootstrap</span>
+            <span>GitHub</span>
+          </div>
+          <ul>
+            <li>Built a full-stack IPO portal with REST APIs for listing DRHPs, RHPs, and live return data.</li>
+            <li>Designed responsive UI using Bootstrap 5, integrated GitHub CI, and tested endpoints with Postman.</li>
+            <li>Enhanced performance and user experience with modular backend architecture.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="filter-buttons">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="fullstack">Fullstack</button>
+        <button data-filter="data">Data</button>
+      </div>
+      <div class="project-grid">
+        <div class="project-card" data-category="fullstack">
+          <img src="Melody Manager.jpg" alt="Melody Manager" />
+          <h3>Melody Manager</h3>
+          <p>Python-powered Music Library System with MySQL integration.</p>
+          <a href="#" class="details-button" data-project-id="melody-manager">Details</a>
+        </div>
+        <div class="project-card" data-category="data">
+          <img src="Learn Trade.png" alt="Learn Trade" />
+          <h3>Learn Trade</h3>
+          <p>Stock Trading Portfolio Management System with real-time data.</p>
+          <a href="#" class="details-button" data-project-id="learn-trade">Details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-dark">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Contact Me</h2>
+          <ul>
+            <li><i class="fas fa-envelope"></i><a href="mailto:21129saurabh@gmail.com">21129saurabh@gmail.com</a></li>
+            <li><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/saurabhpawal" target="_blank">linkedin/saurabhpawal</a></li>
+            <li><i class="fab fa-github"></i><a href="https://github.com/21129saurabh" target="_blank">github.com/21129saurabh</a></li>
+            <li><i class="fas fa-file-download"></i><a href="resume.pdf" download>Download Resume</a></li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <h3>Send a Message</h3>
+          <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+            <div id="form-response"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Replace the existing .fab-resume button -->
+<a href="resume.pdf" download class="fab-resume">
+  <i class="fas fa-file-download"></i> download resume
+</a>
+
+  <footer>
+    <p>© 2025 Saurabh Pawal. All rights reserved.</p>
+  </footer>
+
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h3 id="modalProjectTitle"></h3>
+      <img id="modalProjectImage" src="" alt="" />
+      <p id="modalProjectSummary"></p>
+      <div class="modal-description-details">
+        <ul id="modalProjectDetailsList"></ul>
+      </div>
+      <div class="modal-tech-stack">
+        <h4>Technologies Used:</h4>
+        <ul id="modalTechList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="tsparticles"></div>
+</body>
+</html>
