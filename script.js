@@ -280,20 +280,30 @@ const projectsData = {
     },
     tech: ["Next.js", "Firebase", "Tailwind CSS", "Chart.js"], // Example tech stack for Learn Trade
   },
-  // Add more projects following this new structure:
-  // 'your-project-id': {
-  //     title: 'Your Project Title',
-  //     image: 'path/to/your/image.jpg',
-  //     description: {
-  //         summary: 'A concise summary of your project.',
-  //         details: [
-  //             'Detail point 1.',
-  //             'Detail point 2.',
-  //             'Detail point 3.'
-  //         ]
-  //     },
-  //     tech: ['Technology 1', 'Technology 2', 'Technology 3'],
-  // },
+  "ai-failure": {
+    title: "AI Driven Failure Detection Simulator",
+    image: "ai-failure.jpg",
+    summary: "AI-based simulator for predicting system failures and analyzing network reliability.",
+    details: [
+      "Simulates packet loss, latency spikes, and server downtime",
+      "Uses AI models to predict potential failures",
+      "Helps analyze system robustness under stress conditions"
+    ],
+    tech: ["Python", "Machine Learning", "Simulation", "Data Analysis"]
+  },
+
+  "internet-monitor": {
+    title: "Decentralized Internet Monitor",
+    image: "internet-monitor.jpg",
+    summary: "A distributed monitoring system that collects and visualizes internet health metrics.",
+    details: [
+      "Multiple clients send real-time network stats to server",
+      "Visualized on map-based frontend",
+      "Handles packet loss, latency, uptime tracking",
+      "Built using client-server architecture"
+    ],
+    tech: ["C++", "Sockets", "Networking", "Node.js", "Visualization"]
+  }
 };
 
 // Event listener for all "Details" buttons
